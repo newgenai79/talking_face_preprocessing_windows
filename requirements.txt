@@ -1,7 +1,10 @@
-torch==1.11.0
-soundfile==0.10.3
-python==3.9.0 
+--extra-index-url https://download.pytorch.org/whl/cu113
+
+torch==1.11.0+cu113
+soundfile==0.10.3.post1
 transformers==4.27.0
-scenedetect
-opencv-python
-moviepy
+scenedetect==0.6.4
+opencv-python==4.10.0.84
+moviepy==1.0.3
+librosa
+numpy==1.26.3
