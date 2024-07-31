@@ -34,6 +34,8 @@ Step 6: Download weights
 1. Open new command prompt
 2. md weights
 3. cd weights
+4. git lfs install
+5. git clone https://huggingface.co/TencentGameMate/chinese-hubert-large
 ```
 
 Step 7: Inference
