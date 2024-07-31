@@ -1,3 +1,47 @@
+Step 1: Clone the repository
+
+```
+git clone https://github.com/newgenai79/talking_face_preprocessing_windows
+```
+
+Step 2: Navigate inside the cloned repository
+
+```
+cd talking_face_preprocessing_windows
+```
+
+Step 3: Create virtual environment
+
+```
+conda create -n tfpw python==3.9.0
+```
+
+Step 4: Activate virtual environment
+
+```
+conda activate tfpw
+```
+
+Step 5: Install requirements
+
+```
+pip install -r requirements.txt
+```
+
+Step 6: Download weights
+
+```
+1. Open new command prompt
+2. md weights
+3. cd weights
+```
+
+Step 7: Inference
+
+```
+python extract_audio_features.py --model_path "weights/chinese-hubert-large" --audio_dir_path "./data_processing/specified_formats/audios/audios_16k/" --audio_feature_saved_path "./data_processing/specified_formats/audios/hubert_features/" --computed_device "cuda" --padding_to_align_audio True
+```
+
 ## Audio Feature Extraction
 
 ### MFCC  (100 hz)
